@@ -1,0 +1,317 @@
+<div class="board">
+  <div class="center">
+
+    <div class="community-chest-deck">
+      <h2 class="label">Community Chest</h2>
+      <div class="deck"></div>
+    </div>
+
+    <h1 class="title">MONOPOLY</h1>
+
+    <div class="chance-deck">
+      <h2 class="label">Chance</h2>
+      <div class="deck"></div>
+    </div>
+
+  </div>
+
+  <div class="space corner go">
+    <div class="container">
+      <div class="instructions">{{spaceData[0].PriceText}}</div>
+      <div class="go-word">{{spaceData[0].Name}}</div>
+    </div>
+    <div class="arrow fa fa-long-arrow-left"></div>
+  </div>
+
+  <div class="row horizontal-row bottom-row">
+
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar light-blue"></div>
+        <div class="name">{{spaceData[1].Name}}</div>
+        <div class="price">Price {{spaceData[1].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space community-chest">
+
+      <div class="container">
+        <div class="color-bar light-blue"></div>
+
+        <div class="name">{{spaceData[2].Name}}</div>
+        <i class="drawing fa fa-cube"></i>
+        <div class="instructions">{{spaceData[2].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space chance">
+      <div class="container">
+        <div class="name">Chance</div>
+        <i class="drawing fa fa-question"></i>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar light-blue"></div>
+        <div class="name">{{spaceData[3].Name}}</div>
+        <div class="price">Price {{spaceData[3].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space railroad">
+      <div class="container">
+        <div class="name">Reading Railroad</div>
+        <i class="drawing fa fa-subway"></i>
+        <div class="price">Price $200</div>
+      </div>
+    </div>
+    <div class="space fee income-tax">
+      <div class="container">
+        <div class="name">{{spaceData[4].Name}}</div>
+        <div class="diamond"></div>
+        <div class="instructions">{{spaceData[4].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar dark-purple"></div>
+        <div class="name">{{spaceData[5].Name}}</div>
+        <div class="price">Price {{spaceData[5].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space community-chest">
+      <div class="container">
+        <div class="name">Community Chest</div>
+        <i class="drawing fa fa-cube"></i>
+        <div class="instructions">Follow instructions on top card</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar dark-purple"></div>
+        <div class="name three-line-name">{{spaceData[6].Name}}</div>
+        <div class="price">Price {{spaceData[6].PriceText}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space corner jail">
+    <div class="just">Just</div>
+    <div class="drawing">
+      <div class="container">
+        <div class="name">In</div>
+        <div class="window">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <i class="person fa fa-frown-o"></i>
+        </div>
+        <div class="name">Jail</div>
+      </div>
+    </div>
+    <div class="visiting">Visiting</div>
+  </div>
+
+  <div class="row vertical-row left-row">
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[20].Color}}"></div>
+        <div class="name">{{spaceData[20].Name}}</div>
+        <div class="price">Price {{spaceData[20].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar orange"></div>
+        <div class="name">{{spaceData[21].Name}}</div>
+        <div class="price">Price {{spaceData[21].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space community-chest">
+      <div class="container">
+        <div class="name">Community Chest</div>
+        <i class="drawing fa fa-cube"></i>
+        <div class="instructions">Follow instructions on top card</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar orange"></div>
+        <div class="name">{{spaceData[22].Name}}</div>
+        <div class="price">Price {{spaceData[22].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space railroad">
+      <div class="container">
+        <div class="name long-name">{{spaceData[25].Name}}</div>
+        <i class="drawing fa fa-subway"></i>
+        <div class="price">Price {{spaceData[25].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[23].Color}}"></div>
+        <div class="name">{{spaceData[23].Name}}</div>
+        <div class="price">Price {{spaceData[23].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[24].Color}}"></div>
+        <div class="name">{{spaceData[24].Name}}</div>
+        <div class="price">Price {{spaceData[24].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space utility electric-company">
+      <div class="container">
+        <div class="name">Electric Company</div>
+        <i class="drawing fa fa-lightbulb-o"></i>
+        <div class="price">Price $150</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[26].Color}}"></div>
+        <div class="name">{{spaceData[26].Name}}</div>
+        <div class="price">Price {{spaceData[26].Price}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="space corner free-parking">
+    <div class="container">
+      <div class="name">Free</div>
+      <i class="drawing fa fa-car"></i>
+      <div class="name">Parking</div>
+    </div>
+  </div>
+  
+  <div class="row horizontal-row top-row">
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar red"></div>
+        <div class="name">{{spaceData[8].Name}}</div>
+        <div class="price">Price {{spaceData[8].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space chance">
+      <div class="container">
+        <div class="name">Chance</div>
+        <i class="drawing fa fa-question blue"></i>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[9].Color}}"></div>
+        <div class="name">{{spaceData[9].Name}}</div>
+        <div class="price">Price {{spaceData[9].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar red"></div>
+        <div class="name">{{spaceData[10].Name}}</div>
+        <div class="price">Price {{spaceData[10].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space railroad">
+      <div class="container">
+        <div class="name">B & O Railroad</div>
+        <i class="drawing fa fa-subway"></i>
+        <div class="price">Price $200</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[11].Color}}"></div>
+        <div class="name">{{spaceData[11].Name}}</div>
+        <div class="price">Price {{spaceData[11].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[12].Color}}"></div>
+        <div class="name">{{spaceData[12].Name}}</div>
+        <div class="price">Price {{spaceData[12].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space utility waterworks">
+      <div class="container">
+        <div class="name">Waterworks</div>
+        <i class="drawing fa fa-tint"></i>
+        <div class="price">Price $120</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[13].Color}}"></div>
+        <div class="name">{{spaceData[13].Name}}</div>
+        <div class="price">Price {{spaceData[13].PriceText}}</div>
+      </div>
+    </div>
+  </div>
+
+  <app-corner-space icon="gavel" type="go-to-jail" topLabel="Go To" bottomLabel="Jail"></app-corner-space>
+
+  <div class="row vertical-row right-row">
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar green"></div>
+        <div class="name">{{spaceData[14].Name}}</div>
+        <div class="price">Price {{spaceData[14].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[15].Color}}"></div>
+        <div class="name three-line-name">{{spaceData[15].Name}}</div>
+        <div class="price">Price {{spaceData[15].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space community-chest">
+      <div class="container">
+        <div class="name">Community Chest</div>
+        <i class="drawing fa fa-cube"></i>
+        <div class="instructions">Follow instructions on top card</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[16].Color}}"></div>
+        <div class="name long-name">{{spaceData[16].Name}}</div>
+        <div class="price">Price {{spaceData[16].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space railroad">
+      <div class="container">
+        <div class="name">Short Line</div>
+        <i class="drawing fa fa-subway"></i>
+        <div class="price">Price $200</div>
+      </div>
+    </div>
+    <div class="space chance">
+      <div class="container">
+        <div class="name">Chance</div>
+        <i class="drawing fa fa-question"></i>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[19].Color}}"></div>
+        <div class="name">{{spaceData[19].Name}}</div>
+        <div class="price">Price {{spaceData[19].PriceText}}</div>
+      </div>
+    </div>
+    <div class="space fee luxury-tax">
+      <div class="container">
+        <div class="name">Luxury Tax</div>
+        <div class="drawing fa fa-diamond"></div>
+        <div class="instructions">Pay $75.00</div>
+      </div>
+    </div>
+    <div class="space property">
+      <div class="container">
+        <div class="color-bar {{spaceData[18].Color}}"></div>
+        <div class="name">{{spaceData[18].Name}}</div>
+        <div class="price">Price {{spaceData[18].PriceText}}</div>
+      </div>
+    </div>
+  </div>
+</div>
