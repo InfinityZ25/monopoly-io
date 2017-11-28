@@ -1,4 +1,5 @@
 import {Trade} from "./trade";
+import * as $ from "jquery";
 
 export class Game {
 
@@ -115,8 +116,8 @@ export class Game {
     var boo = val !== '0';
     var wrap = $(this).closest('.player-wrap');
 
-    wrap.find('.player-name').attr('disabled', boo);
-    wrap.nextAll().find('.player-name').attr('disabled', boo);
+    wrap.find('.player-name').attr('disabled', String(boo));
+    wrap.nextAll().find('.player-name').attr('disabled', String(boo));
     wrap.nextAll().find('.player-intel').val(val);
   });
 }
@@ -350,7 +351,7 @@ export class Game {
 
     document.getElementById("bid").onfocus = function () {
       this.style.color = "black";
-      if (isNaN((<HTMLInputElement>this).value)) {
+      if (isNaN(parseInt((<HTMLInputElement>this).value))) {
         (<HTMLInputElement>this).value = "";
       }
     };
@@ -465,9 +466,9 @@ export class Game {
     var isShift = false;
 
     if (window.event) {
-      key = window.event.keyCode;
-      isCtrl = window.event.ctrlKey;
-      isShift = window.event.shiftKey;
+      //key = window.event.keyCode;
+      //isCtrl = window.event.ctrlKey;
+      //isShift = window.event.shiftKey;
     } else if (e) {
       key = e.keyCode;
       isCtrl = e.ctrlKey;
@@ -851,8 +852,8 @@ export class Game {
     money = parseInt((<HTMLInputElement>document.getElementById("trade-leftp-money")).value, 10) || 0;
     money -= parseInt((<HTMLInputElement>document.getElementById("trade-rightp-money")).value, 10) || 0;
 
-    var trade = new Trade(initiator, recipient, money, property, communityChestJailCard, chanceJailCard);
-
+    //var trade = new Trade(initiator, recipient, money, property, communityChestJailCard, chanceJailCard);
+    var trade = new Trade();
     return trade;
   };
 
@@ -1123,7 +1124,8 @@ export class Game {
       return false;
     }
 
-    var reversedTrade = new Trade(recipient, initiator, -money, reversedTradeProperty, -tradeObj.getCommunityChestJailCard(), -tradeObj.getChanceJailCard());
+    //var reversedTrade = new Trade(recipient, initiator, -money, reversedTradeProperty, -tradeObj.getCommunityChestJailCard(), -tradeObj.getChanceJailCard());
+    var reversedTrade = new Trade();
 
     if (recipient.human) {
 

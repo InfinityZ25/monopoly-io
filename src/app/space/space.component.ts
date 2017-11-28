@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./space.component.css']
 })
 export class SpaceComponent implements OnInit {
+  type;
+  color;
+  name;
+  pricetext;
 
   constructor() { }
 
